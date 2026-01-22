@@ -24,5 +24,14 @@ contract Example {
         PERMIT2 = IPermit2(_permit2);
     }
 
+    function approveTokenWithPermit2(
+        address token,
+        uint160 amount,
+        uint48 expiration
+    ) external {
+        IERC20(token).approve(address(PERMIT2), type(uint256).max);
+        PERMIT2.approve(token, address(ROUTER), amount, expiration);
+    }
+
     // Agregaremos más funciones aquí
 }
