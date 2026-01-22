@@ -12,3 +12,22 @@ docs/
 
 # Dotenv file
 .env
+
+# Coverage
+coverage/
+coverage.json
+lcov.info
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (si usas herramientas adicionales)
+node_modules/
