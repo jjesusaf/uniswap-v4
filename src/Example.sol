@@ -36,8 +36,7 @@ contract Example {
     function swapExactInputSingle(
         PoolKey calldata key, // Struct PoolKey que identifica el pool v4
         uint128 amountIn, // Cantidad exacta de tokens a intercambiar
-        uint128 minAmountOut, // Cantidad mínima de tokens de salida esperada
-        uint256 deadline // Timestamp después del cual la transacción se revertirá
+        uint128 minAmountOut // Cantidad mínima de tokens de salida esperada
     ) external returns (uint256 amountOut) {
         // La implementación seguirá
     }
